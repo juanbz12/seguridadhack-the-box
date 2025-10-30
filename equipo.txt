@@ -1,0 +1,4 @@
+Estudiante A: Juan david avila
+Estudiante B: Esteban Bazurto.
+Roles sesión 1: A=Recon, B=Documentación
+Roles sesión 2: A=Documentación, B=Explotación

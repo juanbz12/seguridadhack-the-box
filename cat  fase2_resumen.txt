@@ -1,0 +1,38 @@
+cat > fase2_resumen.txt <<'EOF'
+Host objetivo: 10.129.81.33
+Fecha: 2025-10-24
+
+Vector explotado:
+  - Servicio Telnet (puerto 23) expuesto (telnetd). Acceso interactivo a través de Telnet en el entorno de práctica.
+
+Comandos clave ejecutados:
+  - nmap -sC -sV -p 23 10.129.81.33 -oN nmap_service_enum.txt
+  - nmap -sV -p 23 --script=banner,telnet-encryption 10.129.81.33 -oN nmap_telnet_banner_10.129.81.33.txt
+  - echo -e "\r\n" | timeout 3 nc 10.129.81.33 23 > banner.txt
+  - searchsploit telnetd
+  - searchsploit -x linux/remote/48170.py  (revisión de PoC relevante)
+  - whoami
+  - id
+  - uname -a
+  - find / -maxdepth 3 -type f -name "*user*" 2>/dev/null
+  - find / -perm -4000 -type f 2>/dev/null
+  - empaquetado de evidencias: tar -czf post_enum_<timestamp>.tar.gz post_enum_<timestamp>/
+
+Acceso conseguido:
+  - Usuario: avilamiau26
+  - Salida de whoami: avilamiau26
+  - Salida de id: uid=1002(avilamiau26) gid=1002(avilamiau26) groups=1002(avilamiau26),27(sudo),100(users)
+  - Nota: el usuario pertenece al grupo **sudo**, lo que indica posibilidad de elevación de privilegios si existen configuraciones permisivas en sudoers.
+
+Recomendaciones de seguridad (prioritarias):
+  1. Deshabilitar Telnet y migrar a SSH con autenticación por clave pública; si Telnet es imprescindible en algún dispositivo legado, restringir acceso mediante firewall/ACL a IPs de gestión y habilitar monitoreo/alertas.
+  2. Revisar la pertenencia al grupo sudo y aplicar principio de menor privilegio: eliminar privilegios innecesarios, revisar /etc/sudoers y auditar comandos permitidos; forzar contraseñas fuertes y MFA para cuentas administrativas.
+
+Evidencia y siguientes pasos sugeridos:
+  - Archivos generados: nmap_service_enum.txt, nmap_telnet_banner_10.129.81.33.txt, banner.txt, post_enum_<timestamp>.tar.gz
+  - Incluir las salidas completas (nmap, banner.txt, post_enum summary) en el paquete de evidencias.
+  - Siguiente paso técnico sugerido (en entorno controlado): auditar SUID listada en post-enum y revisar configuraciones sudoers; si se desea practicar, probar escalada mediante vectores identificados en auditoría de sudo/SUID.
+EOF
+
+# mostrar el fichero creado
+cat fase2_resumen.txt

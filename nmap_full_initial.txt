@@ -1,0 +1,8 @@
+# Nmap 7.94SVN scan initiated Wed Oct 22 18:32:14 2025 as: nmap -sS -Pn -T4 -p- --min-rate 1000 -oN nmap_full_initial.txt 10.129.9.75
+Nmap scan report for 10.129.9.75
+Host is up (0.0099s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE
+23/tcp open  telnet
+
+# Nmap done at Wed Oct 22 18:32:20 2025 -- 1 IP address (1 host up) scanned in 5.75 seconds

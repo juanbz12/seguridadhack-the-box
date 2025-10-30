@@ -1,0 +1,189 @@
+---------------------------------------------- ---------------------------------
+ Exploit Title                                |  Path
+---------------------------------------------- ---------------------------------
+3Com SuperStack II PS Hub 40 - TelnetD Weak P | hardware/remote/21011.pl
+602Pro LAN SUITE 2002 - Telnet Proxy localhos | windows/dos/21694.pl
+AbsoluteTelnet 10.16 - 'License name' Denial  | windows/dos/46874.py
+AbsoluteTelnet 11.12 - 'license name' Denial  | windows/dos/48006.py
+AbsoluteTelnet 11.12 - 'SSH1/username' Denial | windows/dos/48305.py
+AbsoluteTelnet 11.12 - 'SSH2/username' Denial | windows/dos/48010.py
+AbsoluteTelnet 11.12 - _license name_ Denial  | windows/dos/48005.py
+AbsoluteTelnet 11.21 - 'Username' Denial of S | windows/dos/48493.py
+AbsoluteTelnet 11.24 - 'Phone' Denial of Serv | windows/dos/50511.py
+AbsoluteTelnet 11.24 - 'Username' Denial of S | windows/dos/50510.py
+Accu-Time Systems MAXIMUS 1.0 - Telnet Remote | hardware/remote/50620.py
+APC WEB/SNMP Management Card (9606) Firmware  | hardware/dos/20654.pl
+Apple Mac OSX 10.2 - Terminal.APP Telnet Link | osx/local/21815.txt
+Arescom NetDSL-1000 - 'TelnetD' Remote Denial | hardware/dos/1464.c
+Beck IPC GmbH IPC@CHIP - TelnetD Login Accoun | multiple/remote/20881.txt
+BSD - 'TelnetD' Remote Command Execution (1)  | bsd/remote/409.c
+BSD - 'TelnetD' Remote Command Execution (2)  | bsd/remote/19520.txt
+Byte Fusion BFTelnet 1.1 - Long Username Deni | windows/dos/19596.txt
+CCProxy 6.2 - Telnet Proxy Ping Overflow (Met | windows/remote/4360.rb
+Celestial Software AbsoluteTelnet 2.0/2.11 -  | windows/remote/22229.pl
+CHIYU IoT Devices - 'Telnet' Authentication B | hardware/remote/49936.py
+Cypress Solutions CTM-200/CTM-ONE - Hard-code | hardware/remote/50407.py
+D-Link Devices - UPnP SOAP TelnetD Command Ex | unix/remote/28333.rb
+Denver Smart Wifi Camera SHC-150 - 'Telnet' R | hardware/remote/50160.txt
+FreeBSD - Telnet Service Encryption Key ID Bu | bsd/remote/18369.rb
+FreeBSD 7.0-RELEASE - Telnet Daemon Privilege | freebsd/local/8055.txt
+GNU inetutils < 1.9.4 - 'telnet.c' Multiple O | linux/dos/45982.txt
+GoodTech Telnet Server 4.0 - Remote Denial of | windows/dos/23506.txt
+GoodTech Telnet Server 5.0.6 - Remote Buffer  | windows/remote/16817.rb
+GoodTech Telnet Server < 5.0.7 - Buffer Overf | windows/dos/882.cpp
+GoodTech Telnet Server < 5.0.7 - Remote Buffe | windows/remote/883.c
+GoodTech Telnet Server NT 2.2.1 - Denial of S | windows/dos/19666.txt
+Herospeed - 'TelnetSwitch' Remote Stack Overf | hardware/remote/43997.py
+Hilgraeve HyperTerminal 6.0 - Telnet Buffer O | windows/dos/20307.txt
+IRIX 5.2/5.3/6.x - TelnetD Environment Variab | irix/remote/20149.c
+Jordan Windows Telnet Server 1.0/1.2 - 'Usern | windows/remote/23491.pl
+Jordan Windows Telnet Server 1.0/1.2 - 'Usern | windows/remote/23492.c
+Jordan Windows Telnet Server 1.0/1.2 - 'Usern | windows/remote/23493.txt
+Kroum Grigorov KpyM Telnet Server 1.0 - Remot | windows/dos/23530.c
+Linux BSD-derived Telnet Service Encryption K | linux/remote/18368.rb
+Microsoft Internet Explorer 5.0.1/5.5/6.0 - T | windows/remote/20680.html
+Microsoft Windows 95/98 Internet Explorer 5/T | windows/local/19462.c
+Microsoft Windows NT 3.5.1 SP2/3.5.1 SP3/3.5. | windows/remote/19113.txt
+Microsoft Windows Server 2000 - 'telnet.exe'  | windows/remote/20222.cpp
+Microsoft Windows Server 2000 - Telnet 'Usern | windows/dos/20907.sh
+Microsoft Windows Server 2000 - Telnet Server | windows/dos/20047.txt
+Mocha Telnet Lite for iOS 4.2 - 'User' Denial | windows/dos/48728.py
+Multiple Vendor Telnet Client - Env_opt_add H | linux/dos/25303.txt
+Netgear - 'TelnetEnable' Magic Packet (Metasp | hardware/remote/44245.rb
+netkit-telnet-0.17 telnetd (Fedora 31) - 'Bra | linux/remote/48170.py
+NUUO NVRMini2 3.8 - 'cgi_system' Buffer Overf | hardware/remote/45427.py
+Polycom HDX - Telnet Authentication Bypass (M | hardware/remote/24494.rb
+Pragma Systems InterAccess TelnetD Server 4.0 | windows/dos/19755.txt
+Pragma Systems InterAccess TelnetD Server 4.0 | windows/dos/19760.txt
+Pragma Systems InterAccess TelnetD Server 4.0 | windows/dos/20904.pl
+Pragma TelnetServer 7.0.4.589 - NULL-Pointer  | multiple/dos/30991.txt
+PragmaSys TelnetServer 2000 - rexec Buffer Ov | windows/dos/20175.pl
+ProFTPd 1.3.2 rc3 < 1.3.3b (FreeBSD) - Telnet | linux/remote/16878.rb
+ProFTPd 1.3.2 rc3 < 1.3.3b (Linux) - Telnet I | linux/remote/16851.rb
+Sagem F@st 3304-V2 - Telnet Crash (PoC)       | hardware/dos/36309.py
+Sagem Router Fast 3304/3464/3504 - Telnet Aut | hardware/remote/17670.py
+Solaris 10/11 Telnet - Remote Authentication  | solaris/remote/9918.rb
+Solaris 2.6/7/8 - 'TTYPROMPT in.telnet' Remot | solaris/remote/57.txt
+Solaris 2.x/7.0/8 / IRIX 6.5.x / OpenBSD 2.x  | unix/remote/21018.c
+Solaris TelnetD - 'TTYPROMPT' Remote Buffer O | solaris/remote/16327.rb
+Solaris TelnetD - 'TTYPROMPT' Remote Buffer O | solaris/remote/9917.rb
+Sun Solaris Telnet - Remote Authentication By | solaris/remote/16328.rb
+SunOS 5.10/5.11 in.TelnetD - Remote Authentic | solaris/remote/3293.sh
+Telnet-Ftp Service Server 1.x - (Authenticate | windows/remote/8273.c
+TelnetD encrypt_keyid - Function Pointer Over | linux/remote/18280.c
+Verso NetPerformer Frame Relay Access Device  | multiple/dos/28542.pl
+---------------------------------------------- ---------------------------------
+---------------------------------------------- ---------------------------------
+ Shellcode Title                              |  Path
+---------------------------------------------- ---------------------------------
+Google Android - Bind (1035/TCP) Telnetd Shel | android/38194.c
+Linux/MIPS (Little Endian) - system(telnetd - | linux_mips/27132.txt
+Linux/x86 - Reverse (200.182.207.235/TCP) Tel | linux_x86/13435.c
+Windows/x86 - Add Administrator User (GAZZA/1 | windows_x86/13508.asm
+---------------------------------------------- ---------------------------------
+---------------------------------------------- ---------------------------------
+ Exploit Title                                |  Path
+---------------------------------------------- ---------------------------------
+3Com SuperStack II PS Hub 40 - TelnetD Weak P | hardware/remote/21011.pl
+Arescom NetDSL-1000 - 'TelnetD' Remote Denial | hardware/dos/1464.c
+Beck IPC GmbH IPC@CHIP - TelnetD Login Accoun | multiple/remote/20881.txt
+BSD - 'TelnetD' Remote Command Execution (1)  | bsd/remote/409.c
+BSD - 'TelnetD' Remote Command Execution (2)  | bsd/remote/19520.txt
+D-Link Devices - UPnP SOAP TelnetD Command Ex | unix/remote/28333.rb
+Herospeed - 'TelnetSwitch' Remote Stack Overf | hardware/remote/43997.py
+IRIX 5.2/5.3/6.x - TelnetD Environment Variab | irix/remote/20149.c
+Microsoft Windows NT 3.5.1 SP2/3.5.1 SP3/3.5. | windows/remote/19113.txt
+netkit-telnet-0.17 telnetd (Fedora 31) - 'Bra | linux/remote/48170.py
+Pragma Systems InterAccess TelnetD Server 4.0 | windows/dos/19755.txt
+Pragma Systems InterAccess TelnetD Server 4.0 | windows/dos/19760.txt
+Pragma Systems InterAccess TelnetD Server 4.0 | windows/dos/20904.pl
+Solaris 2.x/7.0/8 / IRIX 6.5.x / OpenBSD 2.x  | unix/remote/21018.c
+Solaris TelnetD - 'TTYPROMPT' Remote Buffer O | solaris/remote/16327.rb
+Solaris TelnetD - 'TTYPROMPT' Remote Buffer O | solaris/remote/9917.rb
+SunOS 5.10/5.11 in.TelnetD - Remote Authentic | solaris/remote/3293.sh
+TelnetD encrypt_keyid - Function Pointer Over | linux/remote/18280.c
+---------------------------------------------- ---------------------------------
+---------------------------------------------- ---------------------------------
+ Shellcode Title                              |  Path
+---------------------------------------------- ---------------------------------
+Google Android - Bind (1035/TCP) Telnetd Shel | android/38194.c
+Linux/MIPS (Little Endian) - system(telnetd - | linux_mips/27132.txt
+---------------------------------------------- ---------------------------------
+---------------------------------------------- ---------------------------------
+ Exploit Title                                |  Path
+---------------------------------------------- ---------------------------------
+netkit-telnet-0.17 telnetd (Fedora 31) - 'Bra | linux/remote/48170.py
+TelnetD encrypt_keyid - Function Pointer Over | linux/remote/18280.c
+---------------------------------------------- ---------------------------------
+---------------------------------------------- ---------------------------------
+ Shellcode Title                              |  Path
+---------------------------------------------- ---------------------------------
+Linux/MIPS (Little Endian) - system(telnetd - | linux_mips/27132.txt
+---------------------------------------------- ---------------------------------
+Exploits: No Results
+Shellcodes: No Results
+3Com SuperStack II PS Hub 40 - TelnetD Weak P | hardware/remote/21011.pl
+602Pro LAN SUITE 2002 - Telnet Proxy localhos | windows/dos/21694.pl
+AbsoluteTelnet 10.16 - 'License name' Denial  | windows/dos/46874.py
+AbsoluteTelnet 11.12 - 'license name' Denial  | windows/dos/48006.py
+AbsoluteTelnet 11.12 - 'SSH1/username' Denial | windows/dos/48305.py
+AbsoluteTelnet 11.12 - 'SSH2/username' Denial | windows/dos/48010.py
+AbsoluteTelnet 11.12 - _license name_ Denial  | windows/dos/48005.py
+AbsoluteTelnet 11.21 - 'Username' Denial of S | windows/dos/48493.py
+AbsoluteTelnet 11.24 - 'Phone' Denial of Serv | windows/dos/50511.py
+AbsoluteTelnet 11.24 - 'Username' Denial of S | windows/dos/50510.py
+Accu-Time Systems MAXIMUS 1.0 - Telnet Remote | hardware/remote/50620.py
+Apple Mac OSX 10.2 - Terminal.APP Telnet Link | osx/local/21815.txt
+Arescom NetDSL-1000 - 'TelnetD' Remote Denial | hardware/dos/1464.c
+Beck IPC GmbH IPC@CHIP - TelnetD Login Accoun | multiple/remote/20881.txt
+BSD - 'TelnetD' Remote Command Execution (1)  | bsd/remote/409.c
+BSD - 'TelnetD' Remote Command Execution (2)  | bsd/remote/19520.txt
+Byte Fusion BFTelnet 1.1 - Long Username Deni | windows/dos/19596.txt
+CCProxy 6.2 - Telnet Proxy Ping Overflow (Met | windows/remote/4360.rb
+Celestial Software AbsoluteTelnet 2.0/2.11 -  | windows/remote/22229.pl
+CHIYU IoT Devices - 'Telnet' Authentication B | hardware/remote/49936.py
+D-Link Devices - UPnP SOAP TelnetD Command Ex | unix/remote/28333.rb
+Denver Smart Wifi Camera SHC-150 - 'Telnet' R | hardware/remote/50160.txt
+FreeBSD - Telnet Service Encryption Key ID Bu | bsd/remote/18369.rb
+FreeBSD 7.0-RELEASE - Telnet Daemon Privilege | freebsd/local/8055.txt
+GNU inetutils < 1.9.4 - 'telnet.c' Multiple O | linux/dos/45982.txt
+GoodTech Telnet Server 4.0 - Remote Denial of | windows/dos/23506.txt
+GoodTech Telnet Server 5.0.6 - Remote Buffer  | windows/remote/16817.rb
+GoodTech Telnet Server < 5.0.7 - Buffer Overf | windows/dos/882.cpp
+GoodTech Telnet Server < 5.0.7 - Remote Buffe | windows/remote/883.c
+GoodTech Telnet Server NT 2.2.1 - Denial of S | windows/dos/19666.txt
+Herospeed - 'TelnetSwitch' Remote Stack Overf | hardware/remote/43997.py
+Hilgraeve HyperTerminal 6.0 - Telnet Buffer O | windows/dos/20307.txt
+IRIX 5.2/5.3/6.x - TelnetD Environment Variab | irix/remote/20149.c
+Jordan Windows Telnet Server 1.0/1.2 - 'Usern | windows/remote/23491.pl
+Jordan Windows Telnet Server 1.0/1.2 - 'Usern | windows/remote/23492.c
+Jordan Windows Telnet Server 1.0/1.2 - 'Usern | windows/remote/23493.txt
+Kroum Grigorov KpyM Telnet Server 1.0 - Remot | windows/dos/23530.c
+Linux BSD-derived Telnet Service Encryption K | linux/remote/18368.rb
+Microsoft Windows Server 2000 - 'telnet.exe'  | windows/remote/20222.cpp
+Microsoft Windows Server 2000 - Telnet 'Usern | windows/dos/20907.sh
+Microsoft Windows Server 2000 - Telnet Server | windows/dos/20047.txt
+Mocha Telnet Lite for iOS 4.2 - 'User' Denial | windows/dos/48728.py
+Multiple Vendor Telnet Client - Env_opt_add H | linux/dos/25303.txt
+Netgear - 'TelnetEnable' Magic Packet (Metasp | hardware/remote/44245.rb
+netkit-telnet-0.17 telnetd (Fedora 31) - 'Bra | linux/remote/48170.py
+Polycom HDX - Telnet Authentication Bypass (M | hardware/remote/24494.rb
+Pragma Systems InterAccess TelnetD Server 4.0 | windows/dos/19755.txt
+Pragma Systems InterAccess TelnetD Server 4.0 | windows/dos/19760.txt
+Pragma Systems InterAccess TelnetD Server 4.0 | windows/dos/20904.pl
+Pragma TelnetServer 7.0.4.589 - NULL-Pointer  | multiple/dos/30991.txt
+PragmaSys TelnetServer 2000 - rexec Buffer Ov | windows/dos/20175.pl
+ProFTPd 1.3.2 rc3 < 1.3.3b (FreeBSD) - Telnet | linux/remote/16878.rb
+ProFTPd 1.3.2 rc3 < 1.3.3b (Linux) - Telnet I | linux/remote/16851.rb
+Sagem F@st 3304-V2 - Telnet Crash (PoC)       | hardware/dos/36309.py
+Sagem Router Fast 3304/3464/3504 - Telnet Aut | hardware/remote/17670.py
+Solaris 10/11 Telnet - Remote Authentication  | solaris/remote/9918.rb
+Solaris 2.6/7/8 - 'TTYPROMPT in.telnet' Remot | solaris/remote/57.txt
+Solaris TelnetD - 'TTYPROMPT' Remote Buffer O | solaris/remote/16327.rb
+Solaris TelnetD - 'TTYPROMPT' Remote Buffer O | solaris/remote/9917.rb
+Sun Solaris Telnet - Remote Authentication By | solaris/remote/16328.rb
+SunOS 5.10/5.11 in.TelnetD - Remote Authentic | solaris/remote/3293.sh
+Telnet-Ftp Service Server 1.x - (Authenticate | windows/remote/8273.c
+TelnetD encrypt_keyid - Function Pointer Over | linux/remote/18280.c
+Google Android - Bind (1035/TCP) Telnetd Shel | android/38194.c
+Linux/MIPS (Little Endian) - system(telnetd - | linux_mips/27132.txt

@@ -1,0 +1,14 @@
+cat > commands_ran.txt <<'EOF'
+nmap -sC -sV -p 23 10.129.81.33 -oN nmap_service_enum.txt — Escaneo inicial (detecta Telnet en 23/tcp)
+nmap -sV -p 23 --script=banner,telnet-encryption 10.129.81.33 -oN nmap_telnet_banner_10.129.81.33.txt — Obtención de banner con scripts NSE
+echo -e "\r\n" | timeout 3 nc 10.129.81.33 23 > banner.txt — Banner grabbing con netcat
+searchsploit telnetd — Búsqueda de exploits para el servicio Telnet
+searchsploit -x linux/remote/48170.py — Revisión del exploit potencialmente relevante
+whoami — Verificar el usuario actual (resultado: avilamiau26)
+id — Verificar UID/GID y grupos (resultado: avilamiau26 pertenece a sudo)
+uname -a — Obtener información del kernel y sistema operativo
+find / -maxdepth 3 -type f -name "*user*" 2>/dev/null — Buscar archivos relacionados con “user”
+find / -perm -4000 -type f 2>/dev/null — Enumerar binarios SUID (potenciales vectores de escalada)
+tar -czf post_enum_results.tar.gz post_enum/ — Empaquetar resultados de post enumeración
+nc -nlvp 4444 — Listener local para recibir una reverse shell
+EOF

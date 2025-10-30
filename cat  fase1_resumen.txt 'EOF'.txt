@@ -1,0 +1,46 @@
+cat > fase1_resumen.txt <<'EOF'
+==========================================
+Fase 1 — Resumen de reconocimiento
+Host objetivo: 10.129.9.75
+Fecha del resumen: 2025-10-22
+Contexto: Ejercicio práctico usando HTB Viewer. 
+==========================================
+
+1) Objetivo
+- Realizar reconocimiento inicial (recon) y enumeración básica de servicios para identificar vectores de acceso y recopilar información para fases posteriores de pruebas/validación.
+
+2) Hallazgos principales
+- Resultado de escaneo Nmap proporcionado:
+  - Host: 10.129.9.75 (up, latencia ~0.0099s)
+  - Puertos abiertos detectados: 23/tcp — telnet (OPEN)
+  - Nota: No se encontró banner/version en la salida original compartida.
+  - Escaneo inicial registrado: "Starting Nmap 7.94SVN ... at 2025-10-22 18:32 CDT"
+
+3) Comandos ejecutados / preparados
+- Nmap (escaneo inicial mostrado por el usuario):
+  - `nmap -sC -sV -p 23 10.129.9.75 -oN nmap_service_enum.txt`
+- Comandos recomendados para enumeración adicional (no intrusivos):
+  - Telnet/banner:
+    - `nmap -sV -p 23 --script=banner,telnet-encryption -oN nmap_service_enum_nse.txt 10.129.9.75`
+    - `echo -e "\r\n" | timeout 3 nc 10.129.9.75 23 > banner.txt`
+    - `telnet 10.129.9.75 23` (interactivo, sólo en entorno controlado)
+- HTTP (comandos listos — ejecutar solo si hay servicio HTTP):
+  - `curl -I http://10.129.9.75`
+  - `gobuster dir -u http://10.129.9.75 -w /usr/share/wordlists/dirb/common.txt -o gobuster_dirs.txt`
+  - `nikto -h http://10.129.9.75 -output nikto_output.txt`
+- SMB (comandos listos — ejecutar solo si corresponde):
+  - `smbclient -L //10.129.9.75 -N`
+  - `enum4linux -a 10.129.9.75 > enum4linux_output.txt`
+
+4) Evidencia recogida
+- Salida Nmap provista por el usuario (
+  - Línea relevante: `23/tcp open  telnet`
+
+5) Riesgos identificados
+- Telnet (puerto 23) transmite credenciales y datos en texto claro → riesgo de intercepción y compromiso de credenciales.
+- La presencia de Telnet sugiere dispositivo antiguo/embebido o servicio mal configurado.
+=====================================
+Fin del resumen — Fase 1
+Archivo generado: fase1_resumen.txt
+==========================================
+EOF
